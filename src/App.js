@@ -5,7 +5,8 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="text-2xl">
+    <div className="app">
+      <div className="noise"></div>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
