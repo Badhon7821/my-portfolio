@@ -39,7 +39,8 @@ body {
   position: relative;
 }
 
-.hero-img {
+.hero-img,
+.project-right {
   height: 400px;
   width: 400px;
   overflow: hidden;
@@ -117,4 +118,10 @@ body {
 }
 .link-item:hover:after {
   width: 100%;
+}
+
+.section-title {
+  font-family: "Cosi Azure", sans-serif;
+  font-size: 8rem;
+  line-height: 1;
 }

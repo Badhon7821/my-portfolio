@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="flex justify-between container mx-auto mt-14 uppercase">
       <div>
         <HashLink smooth to="#home" className="link-item">
-          Rebecca Parker
+          Md badhon
         </HashLink>
       </div>
       <ul className="links flex flex-col gap-3 text-xl">
