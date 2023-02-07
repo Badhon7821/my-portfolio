@@ -6,12 +6,14 @@ import Socials from "./components/Socials";
 import useSmoothScroll from "./hooks/useSmoothScroll";
 import CustomCursor from "./components/CustomCursor";
 import { useRef } from "react";
+import useCustomCursor from "./hooks/useCustomCursor";
 
 const App = () => {
   const innerCursorRef = useRef(null);
   const outerCursorRef = useRef(null);
 
   useSmoothScroll();
+  useCustomCursor(innerCursorRef, outerCursorRef);
   return (
     <div className="app">
       <div className="noise"></div>
