@@ -22,18 +22,13 @@ const About = () => {
             web applications that provide a seamless experience for the
             end-user. With my in-depth knowledge of the latest web development
             technologies and frameworks, I am able to create innovative
-            solutions that meet the needs of my clients. Whether it's a simple
-            website or a complex web application, I am committed to delivering
-            high-quality work that exceeds expectations.
+            solutions that meet the needs of my clients.
           </p>
           <p className="mt-10">
             In addition to my expertise in the MERN stack, I also have a strong
             background in UI design and animation. I am skilled in using the
             GreenSock Animation Platform (GSAP) library to create dynamic and
-            engaging user interfaces. I have experience in creating smooth
-            animations and transitions that enhance the overall user experience.
-            I am also well-versed in using other design tools such as Adobe XD
-            and Figma to create wireframes and mockups.
+            engaging user interfaces.
           </p>
           <a
             href="https://www.google.com/"
