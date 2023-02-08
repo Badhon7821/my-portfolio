@@ -7,8 +7,8 @@ import {
 } from "../hooks/gsap";
 
 const data = {
-  img1: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1675265033/Personal%20Portfolio%202/about-1_rqcvgh.jpg",
-  img2: "https://res.cloudinary.com/dpkbthpcw/image/upload/v1675265034/Personal%20Portfolio%202/about-2_nmk24z.jpg",
+  img1: "https://res.cloudinary.com/deg5bflae/image/upload/v1675852629/my-portfolio/1675851263073_fgqonp.jpg",
+  img2: "https://res.cloudinary.com/deg5bflae/image/upload/v1675852651/my-portfolio/1675851430919_bjgu2y.jpg",
 };
 
 const About = () => {
@@ -22,7 +22,7 @@ const About = () => {
   const aboutsDesc = [aboutDescRef, aboutDescRef1, aboutLinkRef];
 
   useProjectLeftRightReveal(abouts);
-  useAboutLeftRightReveal(aboutsDesc, 1.5);
+  useProjectLeftRightReveal(aboutsDesc);
 
   useHoverEffect(aboutLeftRef, data.img1, data.img2);
   return (
@@ -32,18 +32,17 @@ const About = () => {
         <div className="about-left" ref={aboutLeftRef}></div>
         <div className="about-right">
           <p ref={aboutDescRef}>
-            I am a MERN stack developer with a strong focus on React, Redux, and
+            I am a front-end developer with a strong focus on React, Redux, and
             Tailwind CSS. I specialize in building responsive and user-friendly
-            web applications that provide a seamless experience for the
-            end-user. With my in-depth knowledge of the latest web development
-            technologies and frameworks, I am able to create innovative
-            solutions that meet the needs of my clients.
+            web applications that provide a user friendly service. With my
+            in-depth knowledge of the latest web development technologies and
+            frameworks, I am able to create easy solution for my clients.
           </p>
           <p ref={aboutDescRef1} className="mt-10">
-            In addition to my expertise in the MERN stack, I also have a strong
-            background in UI design and animation. I am skilled in using the
-            GreenSock Animation Platform (GSAP) library to create dynamic and
-            engaging user interfaces.
+            In addition to my expertise in the front-end developer, I also have
+            a strong background in UI design and animation. I am skilled in
+            using the GreenSock Animation Platform (GSAP) library to create
+            dynamic and engaging user interfaces.
           </p>
           <a
             ref={aboutLinkRef}

@@ -2,11 +2,22 @@ import { useRef } from "react";
 import { useSocialRightReveal } from "../hooks/gsap";
 
 const data = [
-  { id: 1, title: "Facebook", url: "https://www.google.com" },
-  { id: 2, title: "Twitter", url: "https://www.google.com" },
-  { id: 3, title: "GitHub", url: "https://www.google.com" },
-  { id: 4, title: "LinkedIn", url: "https://www.google.com" },
-  { id: 5, title: "Leetcode", url: "https://www.google.com" },
+  {
+    id: 1,
+    title: "Facebook",
+    url: "https://www.facebook.com/mdbayozidbostami.badhon?mibextid=ZbWKwL",
+  },
+  {
+    id: 2,
+    title: "Twitter",
+    url: "https://twitter.com/BayozidBadhon?t=MFzApQ8N8oiJkM-z6MR22w&s=07",
+  },
+  { id: 3, title: "GitHub", url: "https://github.com/Badhon7821" },
+  {
+    id: 4,
+    title: "LinkedIn",
+    url: "https://www.linkedin.com/in/md-badhon-aa2700230/",
+  },
 ];
 
 const Socials = () => {
@@ -21,6 +32,8 @@ const Socials = () => {
     >
       {data.map((social) => (
         <a
+          target="_blank"
+          rel="noreferer"
           key={social.id}
           className="hover:text-cyan-400 duration-500"
           href={social.url}

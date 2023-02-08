@@ -29,7 +29,7 @@ const Skills = () => {
   useSkillTextReveal(skillText2Ref.current);
 
   return (
-    <div className="container mx-auto mt-40">
+    <div className="container mx-auto mt-40" id="skills">
       <SectionTitle title={"SKILLS"} />
       <div className="skill-wrapper grid grid-cols-2 gap-10 mt-20">
         <ul className="skill-left">

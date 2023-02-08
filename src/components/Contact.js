@@ -21,7 +21,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mx-auto mt-40">
+    <div className="container mx-auto mt-40" id="contact">
       <SectionTitle title={"Contact"} />
       <form
         onSubmit={formSubmit}

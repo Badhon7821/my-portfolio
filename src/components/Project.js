@@ -14,22 +14,18 @@ const Project = ({ project }) => {
   const projectNumberRef = useRef(null);
   const projectToolsRef = useRef(null);
   const projectBtnRef = useRef(null);
-  const projectBtnRef1 = useRef(null);
-  const projectBtnRef2 = useRef(null);
 
   const projectReveal = [
+    projectNumberRef,
     projectTitleRef,
     projectDescRef,
-    projectNumberRef,
     projectBtnRef,
-    projectBtnRef1,
-    projectBtnRef2,
   ];
 
   const projectsRefs = [projectRightRef, projectLeftRef];
 
   useProjectLeftRightReveal(projectsRefs);
-  useProjectLeftRightTitleReveal(projectReveal);
+  useProjectLeftRightReveal(projectReveal);
 
   useHoverEffect(projectRightRef, project.img1, project.img2);
 
@@ -58,7 +54,7 @@ const Project = ({ project }) => {
         </span>
         <div className="flex gap-4 flex-wrap">
           <a
-            ref={projectBtnRef1}
+            ref={projectBtnRef}
             href={project.liveLink}
             target="_blank"
             rel="noreferrer"
@@ -67,7 +63,7 @@ const Project = ({ project }) => {
             Live Site
           </a>
           <a
-            ref={projectBtnRef1}
+            ref={projectBtnRef}
             href={project.frontEndLink}
             target="_blank"
             rel="noreferrer"
@@ -77,7 +73,7 @@ const Project = ({ project }) => {
           </a>
           {project.backEndLink && (
             <a
-              ref={projectBtnRef2}
+              ref={projectBtnRef}
               href={project.backEndLink}
               target="_blank"
               rel="noreferrer"
