@@ -22,7 +22,7 @@ const About = () => {
   const aboutsDesc = [aboutDescRef, aboutDescRef1, aboutLinkRef];
 
   useProjectLeftRightReveal(abouts);
-  useAboutLeftRightReveal(aboutsDesc);
+  useAboutLeftRightReveal(aboutsDesc, 1.5);
 
   useHoverEffect(aboutLeftRef, data.img1, data.img2);
   return (

@@ -20,7 +20,11 @@ const Socials = () => {
       ref={socialRef}
     >
       {data.map((social) => (
-        <a className="hover:text-cyan-400 duration-500" href={social.url}>
+        <a
+          key={social.id}
+          className="hover:text-cyan-400 duration-500"
+          href={social.url}
+        >
           {social.title}
         </a>
       ))}

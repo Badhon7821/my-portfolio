@@ -1,8 +1,20 @@
+import { useRef } from "react";
 import SectionTitle from "./SectionTitle";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const formRef = useRef(null);
+
   const formSubmit = (e) => {
     e.preventDefault();
+
+    emailjs.sendForm(
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
+      formRef.current,
+      process.env.REACT_APP_PUBLIC_ID
+    );
+
     e.target.querySelector(".fullname").value = "";
     e.target.querySelector(".email").value = "";
     e.target.querySelector(".message").value = "";
@@ -11,7 +23,11 @@ const Contact = () => {
   return (
     <div className="container mx-auto mt-40">
       <SectionTitle title={"Contact"} />
-      <form onSubmit={formSubmit} className="mt-40 grid grid-cols-2 gap-20">
+      <form
+        onSubmit={formSubmit}
+        ref={formRef}
+        className="mt-40 grid grid-cols-2 gap-20"
+      >
         <div className="from-control overflow-hidden">
           <input
             type="text"

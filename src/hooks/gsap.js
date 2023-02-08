@@ -195,25 +195,26 @@ export const useFooterReveal = (el) => {
     );
   }, [el]);
 };
-export const useAboutLeftRightReveal = (items) => {
+export const useAboutLeftRightReveal = (items, delay = 0) => {
   useEffect(() => {
     const el = items.map((item) => item.current);
     gsap.fromTo(
       el,
       {
-        x: "100%",
+        y: "100vh",
       },
       {
-        x: 0,
-        duration: 2.5,
+        y: "0",
+        duration: 1.5,
         ease: "power4.out",
-        stagger: 0.5,
+        stagger: 0.3,
+        delay,
         scrollTrigger: {
           trigger: el.current,
         },
       }
     );
-  }, [items]);
+  }, [items, delay]);
 };
 export const useProjectLeftRightTitleReveal = (items) => {
   useEffect(() => {

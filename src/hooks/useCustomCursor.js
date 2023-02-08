@@ -14,7 +14,6 @@ const useCustomCursor = (innerCursorRef, outerCursorRef) => {
       outerCursorRef.current.style.top = `${y}px`;
 
       let links = Array.from(document.querySelectorAll("a"));
-      console.log(links);
 
       links.forEach((link) => {
         link.addEventListener("mouseover", () => {
