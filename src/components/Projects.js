@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 import Project from "./Project";
 import SectionTitle from "./SectionTitle";
 
