@@ -16,6 +16,7 @@ const Project = ({ project }) => {
     projectNumberRef,
     projectTitleRef,
     projectDescRef,
+    projectToolsRef,
     projectBtnRef,
   ];
 
