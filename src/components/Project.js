@@ -11,6 +11,7 @@ const Project = ({ project }) => {
   const projectNumberRef = useRef(null);
   const projectToolsRef = useRef(null);
   const projectBtnRef = useRef(null);
+  const projectBtnRef1 = useRef(null);
 
   const projectReveal = [
     projectNumberRef,
@@ -18,6 +19,7 @@ const Project = ({ project }) => {
     projectDescRef,
     projectToolsRef,
     projectBtnRef,
+    projectBtnRef1,
   ];
 
   const projectsRefs = [projectRightRef, projectLeftRef];
@@ -61,7 +63,7 @@ const Project = ({ project }) => {
             Live Site
           </a>
           <a
-            ref={projectBtnRef}
+            ref={projectBtnRef1}
             href={project.frontEndLink}
             target="_blank"
             rel="noreferrer"

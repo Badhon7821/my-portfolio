@@ -129,9 +129,9 @@ export const useProjectLeftRightReveal = (items) => {
       },
       {
         y: 0,
-        duration: 2,
+        duration: 1.5,
         ease: "power4.out",
-        stagger: 0.3,
+        stagger: 0.1,
         scrollTrigger: {
           trigger: el,
         },
