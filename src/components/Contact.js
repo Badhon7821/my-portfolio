@@ -26,7 +26,7 @@ const Contact = () => {
       <form
         onSubmit={formSubmit}
         ref={formRef}
-        className="mt-40 grid grid-cols-2 gap-20"
+        className="mt-40 grid grid-cols-1 lg:grid-cols-2 gap-20"
       >
         <div className="from-control overflow-hidden">
           <input

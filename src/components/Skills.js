@@ -31,7 +31,7 @@ const Skills = () => {
   return (
     <div className="container mx-auto mt-40" id="skills">
       <SectionTitle title={"SKILLS"} />
-      <div className="skill-wrapper grid grid-cols-2 gap-10 mt-20">
+      <div className="skill-wrapper grid grid-cols-1 lg:grid-cols-2 gap-10 mt-20">
         <ul className="skill-left">
           {data
             .filter((_, i) => i < Math.floor(data.length / 2))

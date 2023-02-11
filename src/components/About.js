@@ -28,8 +28,8 @@ const About = () => {
   return (
     <div className="container mx-auto mt-40" id="about">
       <SectionTitle title={"ABOUT"} />
-      <div className="about-wrapper mt-40 grid grid-cols-2 gap-20 overflow-hidden">
-        <div className="about-left" ref={aboutLeftRef}></div>
+      <div className="about-wrapper mt-40  gap-20 overflow-hidden grid grid-cols-1 lg:grid-cols-2">
+        <div className="about-left " ref={aboutLeftRef}></div>
         <div className="about-right">
           <p ref={aboutDescRef}>
             I am a front-end developer with a strong focus on React, Redux, and

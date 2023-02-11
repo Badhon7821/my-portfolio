@@ -34,8 +34,8 @@ const data = [
   {
     id: 3,
     title: "REACT TODO APP - CREATE, READ, UPDATE and DELETE application ",
-    img1: "https://res.cloudinary.com/deg5bflae/image/upload/v1676092761/my-portfolio/react-todo-app-image1_q42x8w.png",
-    img2: "https://res.cloudinary.com/deg5bflae/image/upload/v1676092761/my-portfolio/react-todo-app-image2_vcx1kk.png",
+    img1: "https://res.cloudinary.com/deg5bflae/image/upload/v1676094309/my-portfolio/react-todo-app-img1_a2hhid.png",
+    img2: "https://res.cloudinary.com/deg5bflae/image/upload/v1676094309/my-portfolio/react-todo-app-img2_h0paek.png",
     description:
       "React todo app is created by only react.js. It has included API, this API created by the JSON server. Any task creates, read, update, and delete in real-time in this app. When a task adds then this task is firstly put JSON server and then the post the task list. This task will be deleted when clicking the delete button and when clicking the update button then this task will be updated from the JSON server. It has functionality implemented by React.js and UI completed by a tailwind CSS. ",
     tools: ["React.js", "Tailwind CSS"],
@@ -46,7 +46,10 @@ const data = [
 
 const Projects = () => {
   return (
-    <div className="projects container mx-auto mt-40" id="projects">
+    <div
+      className="projects container md:container  mx-auto mt-40"
+      id="projects"
+    >
       <div className="overflow-hidden">
         <div>
           <SectionTitle title={"my projects"} />

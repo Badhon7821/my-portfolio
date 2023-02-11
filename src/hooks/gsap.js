@@ -118,7 +118,7 @@ export const useSectionTitleReveal = (el, delay = 0) => {
   }, [el, delay]);
 };
 
-export const useProjectLeftRightReveal = (items, delay = 0) => {
+export const useProjectLeftRightReveal = (items) => {
   useEffect(() => {
     const el = items.map((item) => item.current);
 
@@ -130,7 +130,6 @@ export const useProjectLeftRightReveal = (items, delay = 0) => {
       {
         y: 0,
         duration: 2,
-        delay,
         ease: "power4.out",
         stagger: 0.3,
         scrollTrigger: {
@@ -138,7 +137,7 @@ export const useProjectLeftRightReveal = (items, delay = 0) => {
         },
       }
     );
-  }, [items, delay]);
+  }, [items]);
 };
 
 export const useSkillLineReveal = (items) => {
